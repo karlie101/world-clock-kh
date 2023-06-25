@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=z, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timezones-2.0 🕑</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
@@ -13,26 +13,27 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="city">
         <option value="">Select a city</option>
-        <option value="Dominica">Punta Cana 🇩🇴</option>
-        <option value="/Fiji">Suva 🇫🇯</option>
-        <option value="Australia">Sydney 🇦🇺</option>
+        <option value="America/Punta Cana">Punta Cana 🇩🇴</option>
+        <option value="Pacific/Fiji">Suva 🇫🇯</option>
+        <option value="Australia/Sydney">Sydney 🇦🇺</option>
       </select>
-
-      <div class="city" id="punta-cana">
-        <div>
-          <h2>Punta Cana 🇩🇴</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="punta-cana">
+          <div>
+            <h2>Punta Cana 🇩🇴</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="fiji">
-        <div>
-          <h2>Fiji 🇫🇯</h2>
-          <div class="date"></div>
+        <div class="city" id="fiji">
+          <div>
+            <h2>Fiji 🇫🇯</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time"></div>
       </div>
     </div>
     <footer>
